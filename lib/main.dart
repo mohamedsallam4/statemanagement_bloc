@@ -1,4 +1,4 @@
-import 'package:bloc_statemanagement/cubit/counter_cubit.dart';
+import 'package:bloc_statemanagement/cubit/post_cubit.dart';
 import 'package:bloc_statemanagement/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) {
-        return CounterCubit();
+        return PostCubit();
       },
 
       child: MaterialApp(
